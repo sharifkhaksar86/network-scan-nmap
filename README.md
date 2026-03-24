@@ -13,25 +13,18 @@ nmap -sV scanme.nmap.org
 See scan-results.txt for full output.
 
 ## Key Findings
-- Port 22 open (SSH)
-  Results
+Port 22 open, SSH, OpenSSH 6.6.1p1 Ubuntu
+Port 80 open, HTTP, Apache 2.4.7
+Port 9929 open, Nping echo service
+Port 31337 open, tcpwrapped
 
-Scan performed on scanme.nmap.org
+Filtered:
 
-Open ports and services found:
-
-22/tcp open ssh OpenSSH 6.6.1p1 Ubuntu
-80/tcp open http Apache httpd 2.4.7
-9929/tcp open nping-echo
-31337/tcp open tcpwrapped
-
-Filtered ports:
-
-646/tcp filtered ldap
+Port 646 filtered, LDAP
 
 Full scan output is available in scan-results.txt
 - Port 80 open (HTTP)
-- Service detection shows Linux system
+- Target is running a Linux based system
 
 ## Skills Demonstrated
 - Network scanning
