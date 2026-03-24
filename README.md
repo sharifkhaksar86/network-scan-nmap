@@ -1,7 +1,7 @@
 # Network Scan using Nmap
 
 ## Objective
-Scan a target and identify open ports and services
+Scan a target and identify open ports and services.
 
 ## Tools
 - Nmap
@@ -9,12 +9,15 @@ Scan a target and identify open ports and services
 ## Command Used
 nmap -sV scanme.nmap.org
 
-## Steps
-1. Installed Nmap
-2. Ran scan command
-3. Reviewed open ports and services
+## Results
+See scan-results.txt for full output.
 
-## What I learned
-- Port scanning basics
-- Service detection
-- Network enumeration
+## Key Findings
+- Port 22 open (SSH)
+- Port 80 open (HTTP)
+- Service detection shows Linux system
+
+## Skills Demonstrated
+- Network scanning
+- Service enumeration
+- Basic reconnaissance
