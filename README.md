@@ -30,3 +30,14 @@ Full scan output is available in scan-results.txt
 - Network scanning
 - Service enumeration
 - Basic reconnaissance
+
+- Network scanning  
+- Service enumeration  
+- Basic reconnaissance  
+
+## Analysis
+
+The scan identified multiple open services including SSH and HTTP.  
+The presence of Apache and OpenSSH confirms a Linux based system.  
+Filtered LDAP port suggests firewall or access control is in place.  
+Traceroute shows multiple hops, indicating the host is externally reachable.  
