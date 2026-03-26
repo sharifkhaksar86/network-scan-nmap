@@ -1,1 +1,54 @@
+Microsoft Windows [Version 10.0.26200.8037]
+(c) Microsoft Corporation. All rights reserved.
 
+C:\Users\Lenovo>nmap -A scanme.nmap.org
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-03-26 03:22 +0300
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.22s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE    SERVICE    VERSION
+22/tcp    open     ssh        OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey:
+|   1024 ac:00:a0:1a:82:ff:cc:55:99:dc:67:2b:34:97:6b:75 (DSA)
+|   2048 20:3d:2d:44:62:2a:b0:5a:9d:b5:b3:05:14:c2:a6:b2 (RSA)
+|   256 96:02:bb:5e:57:54:1c:4e:45:2f:56:4c:4a:24:b2:57 (ECDSA)
+|_  256 33:fa:91:0f:e0:e1:7b:1f:6d:05:a2:b0:f1:54:41:56 (ED25519)
+80/tcp    open     http       Apache httpd 2.4.7 ((Ubuntu))
+|_http-favicon: Nmap Project
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Go ahead and ScanMe!
+646/tcp   filtered ldp
+9929/tcp  open     tcpwrapped
+31337/tcp open     tcpwrapped
+Aggressive OS guesses: Linux 4.15 - 5.19 (98%), OpenWrt 21.02 (Linux 5.4) (98%), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3) (98%), Linux 4.19 (96%), Linux 6.0 (96%), Linux 5.0 - 5.14 (94%), Linux 5.4 - 5.10 (94%), Linux 2.6.32 (94%), Linux 3.2 - 4.14 (94%), Linux 4.15 (94%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 19 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 8888/tcp)
+HOP RTT        ADDRESS
+1   126.00 ms  192.168.128.1
+2   138.00 ms  static-114-59-143-33.knology.net (143.59.114.33)
+3   41.00 ms   dynamic-76-73-185-193.knology.net (76.73.185.193)
+4   500.00 ms  user-69-73-5-213.knology.net (69.73.5.213)
+5   773.00 ms  static-24-96-2-105.knology.net (24.96.2.105)
+6   362.00 ms  10.42.8.0
+7   245.00 ms  75.76.35.44
+8   1660.00 ms 75.76.35.44
+9   1665.00 ms ae21.cr4-atl2.ip4.gtt.net (141.136.111.138)
+10  1672.00 ms ip4.gtt.net (198.47.103.174)
+11  217.00 ms  ip4.gtt.net (198.47.103.174)
+12  209.00 ms  ae4.r21.atl01.mag.netarch.akamai.com (23.192.0.90)
+13  204.00 ms  ae0.r22.atl01.icn.netarch.akamai.com (23.192.0.73)
+14  204.00 ms  ae5.r21.dfw02.icn.netarch.akamai.com (23.32.62.137)
+15  196.00 ms  ae1.r11.sjc01.ien.netarch.akamai.com (23.207.232.35)
+16  190.00 ms  ae22.gw4.scz1.netarch.akamai.com (23.203.158.53)
+17  343.00 ms  ae22.gw4.scz1.netarch.akamai.com (23.203.158.53)
+18  ...
+19  488.00 ms  scanme.nmap.org (45.33.32.156)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 77.80 seconds
+
+C:\Users\Lenovo>
